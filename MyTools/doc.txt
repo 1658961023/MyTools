@@ -1,0 +1,56 @@
+1.		centerAcctNo	中心账户编号	C32	M
+2.		centerCurrency	中心账户币种	C2	M	G00001
+3.		innerAcctNo	内部账户编号	C32	O	暂不支持
+4.		innerAcctName	内部账户名称	C256	O	暂不支持
+5.	]	publicMode	公共模式	C2	M	G00140
+不启动；
+启动普通标段；
+启动会员标段
+6.		checkInFlag	入账白名单校验 	C2	M	G00008
+0：不控制
+1：控制，控制是否眼角入账白名单，默认不校验
+7.		checkInTime	入账时间控制  	C2	M	G00142
+0：不控制
+1：截止后禁止入账
+8.		secretType	保密标识 	C2	M	G00347
+0：不保密
+1：保密不允许查询 （默认1）
+9.		previewFlag	预览笔数标识 	C2	M	G00008
+0：不控制
+1：控制 控制是否允许在截止前查询入账笔数、金额
+10.		checkOutTime	退款时间控制 	C2	M	G00008
+0：不控制
+1：控制 控制只允许在开标后退款
+11.		refundConfirm	退款复核 	C2	M	G00008
+0：不审核
+1：审核 控制退款是否需要审核，默认否
+12.		feeType	手续费类型 	C2	M	G00274
+0：免手续费
+1：中心代付
+2：本金中扣除 （默认银行代付）
+13.		interestType	退息方式   	C2	M	G00348
+0：不退息
+1：中心垫付
+2：银行发息
+14.		mergeType	合并标识	C2	M	G00008
+0：不合并
+1：合并
+15.		notifyType	通知类型 	C2	O	G00141
+0：不通知
+1：到账推送
+2：退款成功推送
+3：退款失败推送
+4：所有退款推送
+16.		notifyUrl	通知URL	C256	O
+17.		refundSmsFlag	退款短信通知 	C2	O	G00351
+0：不通知
+1：退款成功通知
+2：退款失败通知
+3：所有退款通知
+18.		refundSmsLink	中心联系人（以；分割，最多支持5个）	C256	O
+19.		inSmsFlag	入账失败短信通知	C2	O
+20.		inSmsLink	行内联系人（以;相隔）最大支持5个	C256	O
+21.		openFlag	上银行核心开立标识	C2	O	G00008
+0：上核心开立
+1：不上核心开立
+空值当0处理
