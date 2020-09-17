@@ -1,1 +1,11 @@
 .idea
+*/out/*
+*/target/*
+*.bak
+*.jar
+*.class
+*.iml
+.project
+.settings
+.classpath
+*.rar
