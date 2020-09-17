@@ -26,11 +26,12 @@ public class CreateSqlByDoc {
     private static HashMap<String, String> fieldType = new HashMap<>();
     private static HashMap<String, String> notnull = new HashMap<>();
     private static HashMap<String, String> comments = new HashMap<>();
+    private static final String TABLE_NAME = "CMP_CFCP_PRODUCT";
 
     public static void main(String[] args) {
         String path = System.getProperty("user.dir") + File.separator + "MyTools" + File.separator + "DocUtil" + File.separator + "config.txt";
         getFields(FileUtil.read(path).get(0).split("=")[1]);
-        outToFile(path, "CMP_CFCP_PRODUCT");
+        outToFile(path, TABLE_NAME);
         System.out.println("generate success!!");
     }
 
