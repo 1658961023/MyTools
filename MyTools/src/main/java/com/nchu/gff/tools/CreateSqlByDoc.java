@@ -29,16 +29,12 @@ public class CreateSqlByDoc {
 
     public static void main(String[] args) {
         String path = System.getProperty("user.dir") + File.separator + "MyTools" + File.separator + "DocUtil" + File.separator + "config.txt";
-        try {
-            getFields(FileUtil.read(path).get(0).split("=")[1]);
-            outToFile(path, "CMP_CFCP_PRODUCT");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        getFields(FileUtil.read(path).get(0).split("=")[1]);
+        outToFile(path, "CMP_CFCP_PRODUCT");
         System.out.println("generate success!!");
     }
 
-    private static void getFields(String path) throws IOException {
+    private static void getFields(String path) {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(path)))) {
             String line;
             while ((line = br.readLine()) != null) {
