@@ -1,4 +1,4 @@
-package main.java.com.nchu.gff.tools;
+package com.nchu.gff.tools;
 
 import main.java.com.nchu.gff.util.FileUtil;
 import main.java.com.nchu.gff.util.StringUtil;

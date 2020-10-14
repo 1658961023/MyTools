@@ -1,4 +1,4 @@
-package main.java.com.nchu.gff.util;
+package com.nchu.gff.util;
 
 import java.math.BigDecimal;
 import java.text.ParseException;

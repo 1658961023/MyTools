@@ -1,4 +1,4 @@
-package main.java.com.nchu.gff.tools;
+package com.nchu.gff.tools;
 
 
 import main.java.com.nchu.gff.util.FileUtil;
@@ -28,7 +28,7 @@ public class CreateClassFileByDoc {
     }
 
     private static Map<String,String> getFields(String path){
-        Map<String,String> fields = new LinkedHashMap<>(20);
+        Map<String,String> fields = new LinkedHashMap(20);
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
             String line;
