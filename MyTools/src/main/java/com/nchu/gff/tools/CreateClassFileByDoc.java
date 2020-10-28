@@ -1,7 +1,7 @@
 package com.nchu.gff.tools;
 
 
-import main.java.com.nchu.gff.util.FileUtil;
+import com.nchu.gff.util.FileUtil;
 
 import java.io.*;
 import java.util.*;
